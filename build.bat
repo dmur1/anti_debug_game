@@ -10,6 +10,7 @@ pushd build
 del * /Q
 
 cl /W2 /WX ..\anti_debug_game.cpp
+cl /W2 /WX ..\method_1.cpp
 
 popd
 
