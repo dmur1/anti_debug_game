@@ -62,7 +62,6 @@ int try_find_variables(LPVOID base_address, SIZE_T region_size) {
         }
 
         if (byte) {
-            printf("%d\n", byte);
             if (byte == DEFAULT_VALUE_FOR_PLAYER_HEALTH) {
                 player_health = (LPVOID)((uintptr_t)base_address + i);
             }
@@ -156,7 +155,7 @@ int main(int argc, char** argv) {
 
     printf("found player_health: %p\n", player_health);
     printf("found ammo_count: %p\n", ammo_count);
-    printf("found player position: %p\n", position);
+    printf("found player position: %p\n\n", position);
 
     DWORD previous_player_health = get_player_health();
     set_player_health(420);
